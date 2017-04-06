@@ -3,7 +3,7 @@ package model;
 /**
  * Created by gpascal on 4/6/2017.
  */
-public abstract  class Account {
+public class Account implements Printable{
     private String description;
     private String iban;
     private int balance;
@@ -36,5 +36,9 @@ public abstract  class Account {
         this.description = description;
         this.iban = iban;
         this.balance = balance;
+    }
+
+    public void printInstance() {
+        System.out.println("\n afisam din Account class " + "\n description " + this.getDescription() + "\n balanta " + this.getBalance() + "\n ibanul " + this.getIban());
     }
 }
