@@ -30,4 +30,9 @@ public class AccountHolder implements Printable {
         System.out.println(" din clasa account holder afisam numele " + this.getName());
 
     }
+
+    public AccountHolder(String name, Account[] accountList) {
+        this.name = name;
+        this.accountList = accountList;
+    }
 }
